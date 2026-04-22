@@ -1,0 +1,418 @@
+/* --------------------------------------------------
+   Root color variables
+   These store the main color palette so the same
+   colors can be reused throughout the website
+-------------------------------------------------- */
+:root {
+    --bg-dark: #030719;
+    --bg-panel: #0a1224;
+    --bg-card: #101b31;
+    --nav-bg: #08101f;
+    --deep-blue: #05204F;
+    --steel-blue: #0E5C96;
+    --cyan: #35D6E8;
+    --text-light: #F4F7FB;
+    --text-soft: #C8D8E8;
+    --border-glow: rgba(53, 214, 232, 0.35);
+}
+
+/* --------------------------------------------------
+   Body styles
+   Controls the full page background, font, spacing,
+   and default text color
+-------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, var(--bg-dark), var(--deep-blue));
+    color: var(--text-light);
+}
+
+/* --------------------------------------------------
+   Wrapper
+   Centers the site on the page and limits the width
+-------------------------------------------------- */
+#wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-glow);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.45);
+}
+
+/* --------------------------------------------------
+   Header
+   Holds the top banner image
+-------------------------------------------------- */
+header {
+    background-color: #000000;
+    border-bottom: 3px solid var(--cyan);
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+/* --------------------------------------------------
+   Banner image
+   Makes the banner stretch across the page width
+-------------------------------------------------- */
+#banner {
+    display: block;
+    width: 100%;
+    height: auto;          
+    object-fit: cover;     
+    object-position: center;
+}
+
+/* --------------------------------------------------
+   Main page layout
+   Places sidebar navigation on the left and content
+   area on the right
+-------------------------------------------------- */
+#layout {
+    display: flex;
+    min-height: 700px;
+}
+
+/* --------------------------------------------------
+   Navigation sidebar
+   Styles the left-side menu area
+-------------------------------------------------- */
+nav {
+    width: 230px;
+    background-color: var(--nav-bg);
+    border-right: 2px solid var(--cyan);
+}
+
+/* --------------------------------------------------
+   Navigation list
+   Removes default bullets and spacing from the menu
+-------------------------------------------------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------------------------
+   Navigation list items
+   Adds a divider line between each menu link
+-------------------------------------------------- */
+nav li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --------------------------------------------------
+   Navigation links
+   Styles each clickable menu item
+-------------------------------------------------- */
+nav a {
+    display: block;
+    padding: 16px 18px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, padding-left 0.3s ease, color 0.3s ease;
+}
+
+/* --------------------------------------------------
+   Navigation hover state
+   Changes the look of links when the mouse is over them
+-------------------------------------------------- */
+nav a:hover {
+    background-color: var(--steel-blue);
+    color: #ffffff;
+    padding-left: 24px;
+}
+
+/* --------------------------------------------------
+   Active navigation link
+   Highlights the page the visitor is currently on
+-------------------------------------------------- */
+nav a.active {
+    background-color: var(--steel-blue);
+    color: #ffffff;
+    border-left: 4px solid var(--cyan);
+}
+
+/* --------------------------------------------------
+   Main content area
+   Controls spacing and background for page content
+-------------------------------------------------- */
+main {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--bg-panel);
+}
+
+/* --------------------------------------------------
+   Hero intro section
+   Used on the home page for image + intro text
+-------------------------------------------------- */
+.hero-intro {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-left: 5px solid var(--cyan);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* --------------------------------------------------
+   Profile picture
+   Controls size, border, and rounded corners
+-------------------------------------------------- */
+.profile-pic {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 16px;
+    border: 3px solid var(--cyan);
+    box-shadow: 0 0 16px rgba(53, 214, 232, 0.25);
+}
+
+/* --------------------------------------------------
+   Intro text container
+   Allows the text to grow beside the profile image
+-------------------------------------------------- */
+.intro-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+/* --------------------------------------------------
+   Main heading inside intro section
+-------------------------------------------------- */
+.intro-text h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--cyan);
+    font-size: 2rem;
+}
+
+/* --------------------------------------------------
+   Intro paragraph styling
+-------------------------------------------------- */
+.intro-text p {
+    margin: 0;
+    line-height: 1.7;
+    color: var(--text-soft);
+}
+
+/* --------------------------------------------------
+   Page title card
+   Used at the top of inside pages
+-------------------------------------------------- */
+.page-title-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-left: 5px solid var(--cyan);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+/* --------------------------------------------------
+   Page title heading
+-------------------------------------------------- */
+.page-title-card h1 {
+    margin-top: 0;
+    color: var(--cyan);
+}
+
+/* --------------------------------------------------
+   Page title paragraph
+-------------------------------------------------- */
+.page-title-card p {
+    margin-bottom: 0;
+    color: var(--text-soft);
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------
+   General content cards
+   Reusable content boxes for sections on each page
+-------------------------------------------------- */
+.content-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-left: 5px solid var(--steel-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+/* --------------------------------------------------
+   Headings inside content cards
+-------------------------------------------------- */
+.content-card h2 {
+    margin-top: 0;
+    color: var(--cyan);
+}
+
+/* --------------------------------------------------
+   Paragraphs and list items inside cards
+-------------------------------------------------- */
+.content-card p,
+.content-card li {
+    color: var(--text-soft);
+    line-height: 1.7;
+}
+
+/* --------------------------------------------------
+   Lists inside content cards
+-------------------------------------------------- */
+.content-card ul {
+    margin-bottom: 0;
+    padding-left: 22px;
+}
+
+/* --------------------------------------------------
+   Certification grid
+   Displays certification lists side by side
+-------------------------------------------------- */
+.cert-grid {
+    display: flex;
+    gap: 40px; /* space between the two lists */
+    flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+/* Each column inside the grid */
+.cert-grid > div {
+    flex: 1;
+    min-width: 250px; /* prevents columns from getting too small */
+}
+/* --------------------------------------------------
+   Button-style link
+   Used for the resume link on the resume page
+-------------------------------------------------- */
+.button-link {
+    display: inline-block;
+    background-color: var(--steel-blue);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* --------------------------------------------------
+   Button-style link hover effect
+-------------------------------------------------- */
+.button-link:hover {
+    background-color: var(--cyan);
+    color: #000000;
+}
+
+/* ===================== FOOTER ===================== */
+/* footer styles: centered text with small italic font */
+footer {
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+}
+
+/* --------------------------------------------------
+   Form styling
+   Makes the form line up neatly in one column
+-------------------------------------------------- */
+form {
+    display: grid;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------
+   Form labels
+   Makes labels bold and easier to read
+-------------------------------------------------- */
+label {
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+/* --------------------------------------------------
+   Text inputs and textarea
+   Styles all form boxes consistently
+-------------------------------------------------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-glow);
+    border-radius: 8px;
+    background-color: #091120;
+    color: var(--text-light);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------
+   Textarea
+   Lets the user resize the message box vertically
+-------------------------------------------------- */
+textarea {
+    resize: vertical;
+}
+
+/* --------------------------------------------------
+   Submit button
+   Styles the button used to send the contact form
+-------------------------------------------------- */
+input[type="submit"] {
+    width: fit-content;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--steel-blue);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* --------------------------------------------------
+   Submit button hover effect
+-------------------------------------------------- */
+input[type="submit"]:hover {
+    background-color: var(--cyan);
+    color: #000000;
+}
+
+/* --------------------------------------------------
+   Responsive layout
+   Stacks the navigation above the content on
+   smaller screens
+-------------------------------------------------- */
+@media (max-width: 900px) {
+    #layout {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid var(--cyan);
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .hero-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 180px;
+    }
+}

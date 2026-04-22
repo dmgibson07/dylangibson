@@ -1,0 +1,119 @@
+<!--Author: Dylan Gibson
+    Filename: about.html
+    Date: 04/22/2026-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Dylan Gibson | About Me</title>
+
+    <!-- Search engine description -->
+    <meta name="description" content="Learn more about Dylan Gibson, his background, work ethic, and transition from emergency services into IT and cybersecurity.">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Full page wrapper -->
+    <div id="wrapper">
+
+        <!-- Top banner image -->
+        <header>
+            <img src="myhero.jpg" alt="Cyber banner for Dylan Gibson" id="banner">
+        </header>
+
+        <!-- Page layout with sidebar and content -->
+        <div id="layout">
+
+            <!-- Left navigation menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="careers.html">Career History</a></li>
+                    <li><a href="future.html">Future Goals</a></li>
+                    <li><a href="family.html">My Family</a></li>
+                    <li><a href="resume.html">Resume & Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main content for the About page -->
+            <main>
+                 <section class="hero-intro">
+                    <img src="mypic.jpg" alt="Illustrated portrait of Dylan Gibson" class="profile-pic">
+
+                    <div class="intro-text">
+                        <h1>About Me</h1>
+                        <p>
+                            My name is Dylan Gibson. I currently work as a paramedic at Butler County Sheriff's Office. 
+                            I am building my future in IT and cybersecurity. This website is a place for me to share
+                            my background, experience, goals, certifications, and the path I am taking
+                            as I continue learning and growing in the tech field.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-card">
+                    <h2>My Background</h2>
+                    <p>
+                        I have always been a geek at heart. Throughout my teenage years I spent a lot of 
+                        time learning about computers and everything to do with technology. The last two years 
+                        of high school I took the Information Technology program at Warren County Career Center. 
+                        After high school, I started attending college at Sinclair Community College. At sinclair I was 
+                        majoring in Network Administration. During that time at Sinclair, one of my best friends got
+                        me to volunteer at our local fire department. I enjoyed the fire service so much that I decided to 
+                        change my career path and the rest has been history until now. 
+                    </p>
+                </section>
+                
+                <section class="content-card">
+                    <h2>My Interest in Cybersecurity</h2>
+                    <p>
+                        After making the decision to pursue a career in the IT field, I started to look at 
+                        the different paths that I could take. Since I had already built a strong foundation with 
+                        Networking and PC hardware, I started looking at the different IT fields that I could learn and grow
+                        into. My knowledge has always been limited with all the different types of programming luanguages, 
+                        so I decided to focus on cybersecurity. 
+                    </p>
+                </section>
+
+                <section class="content-card">
+                    <h2>What Drives Me</h2>
+                    <p>
+                        I value growth, hard work, and learning new skills. My goal is not only to change
+                        careers, but to build a strong future through knowledge, persistence, and practical
+                        experience. I want my work to reflect both professionalism and purpose.
+                    </p>
+                </section>
+            </main>
+        </div>
+    <!-- footer section -->
+    <footer>
+      Copyright © dmg07 2026<br>
+      <a href="mailto:dmgibson07@gmail.com">Email Me</a>
+      <div>
+         <!-- 
+        DATE DISPLAY SCRIPT:
+        This div contains a JavaScript script that writes the last modified date
+        of the current HTML document to the webpage.
+
+        The document.lastModified property retrieves the date and time
+        the file was last updated.
+
+        document.write() outputs the text directly into the webpage.
+        This will display below the email link in the footer area.
+        -->
+        <script>
+        document.write("This page was last modified on: " + document.lastModified);
+        </script>
+      </div>
+    </footer>
+    </div>
+</body>
+</html>

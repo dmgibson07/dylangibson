@@ -1,0 +1,110 @@
+<!--Author: Dylan Gibson
+    Filename: index.html
+    Date: 04/22/2026-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown on browser tab -->
+    <title>Dylan Gibson | Home</title>
+
+    <!-- Short page description for search engines -->
+    <meta name="description" content="Personal website for Dylan Gibson featuring career history, future goals, family, certifications, resume, and contact information.">
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main wrapper holds the full page layout -->
+    <div id="wrapper">
+
+        <!-- Top banner image -->
+        <header>
+            <img src="myhero.jpg" alt="Cyber banner for Dylan Gibson" id="banner">
+        </header>
+
+        <!-- Layout area holds the left navigation and main content -->
+        <div id="layout">
+
+            <!-- Left sidebar navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="careers.html">Career History</a></li>
+                    <li><a href="future.html">Future Goals</a></li>
+                    <li><a href="family.html">My Family</a></li>
+                    <li><a href="resume.html">Resume & Certifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main page content -->
+            <main>
+                <!-- Intro section with profile image and welcome text -->
+                <section class="hero-intro">
+                    <img src="mypic.jpg" alt="Illustrated portrait of Dylan Gibson" class="profile-pic">
+
+                    <div class="intro-text">
+                        <h1>Welcome</h1>
+                        <p>
+                            Welcome to my personal website! This is a place where I'm going to share my story, goals, and my
+                            future plans for my career in the IT and Cybersecurity field. 
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Card with short site overview -->
+                <section class="content-card">
+                    <h2>About This Website</h2>
+                    <p>
+                        This site brings together different parts of my story. It highlights where I
+                        have come from, what I am doing now, and where I want to go next. My goal is
+                        to build a professional website that reflects both my emergency services background
+                        and my transition into IT and cybersecurity.
+                    </p>
+                </section>
+
+                <!-- Card showing main site sections -->
+                <section class="content-card">
+                    <h2>What You’ll Find Here</h2>
+                    <ul>
+                        <li>Information about who I am and my background</li>
+                        <li>A look at my career history so far</li>
+                        <li>My future plans and long-term goals</li>
+                        <li>A brief overview of my family</li>
+                        <li>My certifications and resume link</li>
+                        <li>A way to contact me</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+
+    <!-- footer section -->
+    <footer>
+      Copyright © dmg07 2026<br>
+      <a href="mailto:dmgibson07@gmail.com">Email Me</a>
+      <div>
+         <!-- 
+        DATE DISPLAY SCRIPT:
+        This div contains a JavaScript script that writes the last modified date
+        of the current HTML document to the webpage.
+
+        The document.lastModified property retrieves the date and time
+        the file was last updated.
+
+        document.write() outputs the text directly into the webpage.
+        This will display below the email link in the footer area.
+        -->
+        <script>
+        document.write("This page was last modified on: " + document.lastModified);
+        </script>
+      </div>
+    </footer>
+    </div>
+</body>
+</html>
